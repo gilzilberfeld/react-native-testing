@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build APK Debug",
+        "group": "build",
+        "type": "shell",
+        "windows": {
+          "command": "cd android; if($?) {./gradlew assembleDebug}"
+        },
+        "linux": {
+          "command": "cd android && ./gradlew assembleDebug"
+        }
+      },
+      {
+        "label": "Run Android on Emulator",
+        "command": "${command:reactNative.runAndroidSimulator}",
+        "problemMatcher": []
+      }
+    ]
+  }

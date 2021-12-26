@@ -1,0 +1,15 @@
+Examples
+  Simple component test
+  Simple screen test
+  Queries
+  Screen test with injection
+    Mock the injectee
+  Integration
+    Navigation test
+  Mock fetch
+  Mock promise(?)
+  Props (test-id thing)
+  A typescript thing.
+    Setup
+    Run simple test
+    transformIgnorePatterns

@@ -1,0 +1,476 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20211226.152351.11284.0.001.json",
+    "dumpEventTime": "2021-12-26T15:23:51Z",
+    "dumpEventTimeStamp": "1640525031463",
+    "processId": 11284,
+    "threadId": null,
+    "cwd": "C:\\Users\\Gil\\Documents\\GitHub\\react-native-testing\\new-react",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Gil\\Documents\\GitHub\\react-native-testing\\new-react\\node_modules\\jest-runner\\node_modules\\jest-worker\\build\\workers\\processChild.js"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.3/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.22000",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 3535109,
+        "nice": 0,
+        "sys": 5195281,
+        "idle": 66832578,
+        "irq": 1778515
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 2161093,
+        "nice": 0,
+        "sys": 1149968,
+        "idle": 72251562,
+        "irq": 31515
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 6889359,
+        "nice": 0,
+        "sys": 2765093,
+        "idle": 65908171,
+        "irq": 56656
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 2477484,
+        "nice": 0,
+        "sys": 1234765,
+        "idle": 71850375,
+        "irq": 30390
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 4010421,
+        "nice": 0,
+        "sys": 2209625,
+        "idle": 69342578,
+        "irq": 48203
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 2223828,
+        "nice": 0,
+        "sys": 1712062,
+        "idle": 71626718,
+        "irq": 47406
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 3435421,
+        "nice": 0,
+        "sys": 2037625,
+        "idle": 70089562,
+        "irq": 49609
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 1985453,
+        "nice": 0,
+        "sys": 1693593,
+        "idle": 71883546,
+        "irq": 32687
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "74:e5:f9:32:d8:27",
+        "address": "fe80::c0f:6ef3:312c:302c",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "74:e5:f9:32:d8:27",
+        "address": "192.168.0.129",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-TDHK83S"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff78f492449",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11577"
+    },
+    {
+      "pc": "0x00007ff78f4969a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29337"
+    },
+    {
+      "pc": "0x00007ff78f495828",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24856"
+    },
+    {
+      "pc": "0x00007ff78f5cd8c2",
+      "symbol": "v8::base::CPU::has_sse+68658"
+    },
+    {
+      "pc": "0x00007ff78fde9bbe",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff78fdd1c91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff78fc9e1ec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff78fca9420",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff78fca5f44",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff78fc9b743",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff78fc99db4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff78fcbafbd",
+      "symbol": "v8::internal::Factory::NewFillerObject+61"
+    },
+    {
+      "pc": "0x00007ff78fa21871",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
+    },
+    {
+      "pc": "0x00007ff790236c4d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x0000025b182e7a1c",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2158419968,
+    "totalCommittedMemory": 2158419968,
+    "usedMemory": 2145407712,
+    "availableMemory": 48701536,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 9437184,
+        "committedMemory": 9437184,
+        "capacity": 4713552,
+        "used": 869632,
+        "available": 3843920
+      },
+      "old_space": {
+        "memorySize": 2134257664,
+        "committedMemory": 2134257664,
+        "capacity": 2131616520,
+        "used": 2130867784,
+        "available": 748736
+      },
+      "code_space": {
+        "memorySize": 954368,
+        "committedMemory": 954368,
+        "capacity": 804448,
+        "used": 804448,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1839104,
+        "committedMemory": 1839104,
+        "capacity": 1236640,
+        "used": 1236640,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 11620352,
+        "committedMemory": 11620352,
+        "capacity": 11593616,
+        "used": 11593616,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 4713552,
+        "used": 0,
+        "available": 4713552
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 115.265,
+    "kernelCpuSeconds": 3.437,
+    "cpuConsumptionPercent": 211.968,
+    "maxRss": 2218070016,
+    "pageFaults": {
+      "IORequired": 816767,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 3142,
+      "writes": 7
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_SDK": "C:\\Users\\Gil\\AppData\\Local\\Android\\Sdk",
+    "APPDATA": "C:\\Users\\Gil\\AppData\\Roaming",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_24300_JEMAHKXAQXQANBQJ",
+    "COLORTERM": "truecolor",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-TDHK83S",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FORCE_COLOR": "1",
+    "GIT_ASKPASS": "c:\\Users\\Gil\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Gil",
+    "INIT_CWD": "C:\\Users\\Gil\\Documents\\GitHub\\react-native-testing\\new-react",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-11.0.1",
+    "JEST_WORKER_ID": "1",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Gil\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-TDHK83S",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "NODE_ENV": "test",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"test\"],\"original\":[\"test\",\"-u\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.17.3 npm/? node/v12.16.3 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Program Files (x86)\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "test",
+    "npm_lifecycle_script": "jest",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_dependencies_expo": "^44.0.0",
+    "npm_package_dependencies_expo_asset": "~8.4.4",
+    "npm_package_dependencies_expo_constants": "~13.0.0",
+    "npm_package_dependencies_expo_font": "~10.0.4",
+    "npm_package_dependencies_expo_linking": "~3.0.0",
+    "npm_package_dependencies_expo_splash_screen": "~0.14.0",
+    "npm_package_dependencies_expo_status_bar": "~1.2.0",
+    "npm_package_dependencies_expo_web_browser": "~10.1.0",
+    "npm_package_dependencies_react": "17.0.1",
+    "npm_package_dependencies_react_dom": "17.0.1",
+    "npm_package_dependencies_react_native": "0.64.3",
+    "npm_package_dependencies_react_native_gesture_handler": "~2.1.0",
+    "npm_package_dependencies_react_native_reanimated": "~2.3.1",
+    "npm_package_dependencies_react_native_safe_area_context": "3.3.2",
+    "npm_package_dependencies_react_native_screens": "~3.10.1",
+    "npm_package_dependencies_react_native_web": "0.17.1",
+    "npm_package_dependencies__expo_vector_icons": "^12.0.0",
+    "npm_package_dependencies__react_native_community_masked_view": "0.1.10",
+    "npm_package_dependencies__react_navigation_bottom_tabs": "~6.0.9",
+    "npm_package_dependencies__react_navigation_native": "~6.0.6",
+    "npm_package_dependencies__react_navigation_stack": "~6.0.11",
+    "npm_package_description": "<p> <!-- iOS --> <a href=\"https://itunes.apple.com/app/apple-store/id982107779\"> <img alt=\"Supports Expo iOS\" longdesc=\"Supports Expo iOS\" src=\"https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff\" /> </a> <!-- Android --> <a href=\"https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample\"> <img alt=\"Supports Expo Android\" longdesc=\"Supports Expo Android\" src=\"https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff\" /> </a> <!-- Web --> <a href=\"https://docs.expo.dev/workflow/web/\"> <img alt=\"Supports Expo Web\" longdesc=\"Supports Expo Web\" src=\"https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff\" /> </a> </p>",
+    "npm_package_devDependencies_jest": "~26.6.3",
+    "npm_package_devDependencies_jest_expo": "~41.0.0",
+    "npm_package_devDependencies_jest_fetch_mock": "~3.0.3",
+    "npm_package_devDependencies__babel_core": "^7.12.9",
+    "npm_package_devDependencies__testing_library_jest_dom": "^5.16.1",
+    "npm_package_devDependencies__testing_library_react_native": "~7.2.0",
+    "npm_package_jest_preset": "react-native",
+    "npm_package_jest_transformIgnorePatterns_0": "node_modules/(?!@react-native|react-native)",
+    "npm_package_jest_verbose": "true",
+    "npm_package_name": "new-react",
+    "npm_package_private": "true",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_scripts_android": "expo start --android",
+    "npm_package_scripts_eject": "expo eject",
+    "npm_package_scripts_ios": "expo start --ios",
+    "npm_package_scripts_start": "expo start",
+    "npm_package_scripts_test": "jest",
+    "npm_package_scripts_web": "expo start --web",
+    "npm_package_version": "1.0.0",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\Gil\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\Gil\\OneDrive",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\Gil\\AppData\\Local\\Temp\\yarn--1640524974124-0.25257588107181106;C:\\Users\\Gil\\Documents\\GitHub\\react-native-testing\\new-react\\node_modules\\.bin;C:\\Users\\Gil\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files (x86)\\Embarcadero\\Studio\\22.0\\bin;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\22.0\\Bpl;C:\\Program Files (x86)\\Embarcadero\\Studio\\22.0\\bin64;C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\22.0\\Bpl\\Win64;C:\\Program Files\\Java\\jdk-11.0.1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\MinGW64\\mingw64\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Gil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Gil\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Gil\\AppData\\Local\\atom\\bin;C:\\Program Files\\Maven\\bin;C:\\Users\\Gil\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Gil\\.dotnet\\tools;C:\\Users\\Gil\\AppData\\Local\\Yarn\\bin;C:\\Users\\Gil\\AppData\\Local\\Microsoft\\WindowsApps;C:\\MinGW64\\mingw64\\bin;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\GnuWin32\\bin;C:\\Users\\Gil\\AppData\\Roaming\\npm;C:\\PHP;C:\\Users\\Gil\\AppData\\Local\\ComposerSetup\\bin;C:\\Users\\Gil\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Gradle\\bin;C:\\Users\\Gil\\.dotnet\\tools;C:\\Users\\Gil\\AppData\\Local\\Android\\Sdk\\tools;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Gil\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.63.2",
+    "TMP": "C:\\Users\\Gil\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-TDHK83S",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-TDHK83S",
+    "USERNAME": "Gil",
+    "USERPROFILE": "C:\\Users\\Gil",
+    "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "--ms-enable-electron-run-as-node",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\Gil\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Gil\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-92547e6f69-sock",
+    "windir": "C:\\WINDOWS",
+    "YARN_WRAP_OUTPUT": "false"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVAST Software\\Avast\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\nlansp_c.dll"
+  ]
+}
