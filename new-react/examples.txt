@@ -1,7 +1,6 @@
 Examples
-  Simple component test
   Simple screen test
-  Queries
+  Fire events
   Screen test with injection
     Mock the injectee
   Integration
