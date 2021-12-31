@@ -39,12 +39,13 @@
     "test": "jest"
   },
   "jest": {
-    
+    "automock": false,
     "verbose": true,
     "preset": "react-native",
     "transformIgnorePatterns": [
       "node_modules/(?!@react-native|react-native)"
-    ]
+    ],
+    "setupFiles":["./setupJest.js"]
   },
   "version": "1.0.0",
   "private": true,

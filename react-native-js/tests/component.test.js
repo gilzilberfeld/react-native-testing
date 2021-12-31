@@ -1,8 +1,9 @@
-import {render } from '@testing-library/react-native'
-import {StaticMonoText} from '../components/TextBoxComponents'
+import {fireEvent, render,  } from '@testing-library/react-native'
+import {StaticMonoText, ChangableText, textToShow} from '../components/TextBoxComponents'
 import EditScreenInfo from '../components/EditScreenInfo'
 
 import '@testing-library/jest-dom'
+import ChangableTextScreen from '../screens/ChangableTextScreen';
 
 describe ('component tests example suite', ()=>{
     test('render to JSON', ()=>{
@@ -42,10 +43,22 @@ describe ('component tests example suite', ()=>{
         expect(theStaticMonoTextElement.props.children).toEqual('StaticText');
     })
 
-    // it('passing parameter and checking internal component', ()=>{
-    //     const { getAllByRole, getByRole , findByRole, getByTestId, getByText} = render(<EditScreenInfo/>);
-    //     const theParametericTextElement = getByTestId("theDynamicTestID");
-    //     expect(theParametericTextElement.props.children).toEqual('StaticText');
-    // })
+    beforeEach(()=>{
+        fetch.resetMocks();
+    });
 
+    it ('mock fetch and wait for promise to end', async()=>{
+        const {getByTestId, update} = render(<ChangableTextScreen/>); 
+        theText = getByTestId("changableText");
+        expect(theText.props.children).toEqual("Before");
+        fetch.mockResponseOnce(JSON.stringify(
+            {
+                "amazonData":   {
+                    "product": "theProduct"
+                }
+            }));
+        
+        await fireEvent.press(theText);  
+        expect(textToShow).toEqual("theProduct");
+    })    
 });

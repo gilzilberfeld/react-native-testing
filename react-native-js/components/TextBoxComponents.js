@@ -1,5 +1,4 @@
 import { Platform } from "react-native";
-
 import { Text, View } from "./Themed";
 
 export function StaticMonoText(props) {
@@ -24,7 +23,15 @@ export function StaticMonoText(props) {
   )
 };
 
-export function ParametericMonoText(props) {
+async function setText(){
+ res =  await fetch('https://api.amazon.com/')
+            .then ( result => result.json());
+  textToShow = res.amazonData['product'];
+};
+
+
+export var textToShow = "Before";
+export function ChangableText(props) {
   return (
     <Text 
       {...props}
@@ -37,11 +44,12 @@ export function ParametericMonoText(props) {
             ios: "Courier New",
             android: "monospace",
           }),
-          fontWeight: "500",
+          fontWeight: "500"
         },
-      ]}
+        
+      ]} onPress={setText}
     >  
-      {props}
+    {textToShow}
     </Text>
   )
 };
