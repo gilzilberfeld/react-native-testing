@@ -1,36 +1,65 @@
-import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
-class Intro extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>
-          This is a React Native snapshot test.
-        </Text>
-      </View>
+export type Props = {
+  name: string;
+  baseEnthusiasmLevel?: number;
+};
+
+const Intro: React.FC<Props> = ({
+  name,
+  baseEnthusiasmLevel = 0
+}) => {
+  const [enthusiasmLevel, setEnthusiasmLevel] = React.useState(
+    baseEnthusiasmLevel
+  );
+
+  const onIncrement = () =>
+    setEnthusiasmLevel(enthusiasmLevel + 1);
+  const onDecrement = () =>
+    setEnthusiasmLevel(
+      enthusiasmLevel > 0 ? enthusiasmLevel - 1 : 0
     );
-  }
-}
+
+  const getExclamationMarks = (numChars: number) =>
+    numChars > 0 ? Array(numChars + 1).join('!') : '';
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.greeting} testID='theText'>
+        Hello {name}
+        {getExclamationMarks(enthusiasmLevel)}
+      </Text>
+      <View>
+        <Button
+          testID='theButton'
+          title="Increase enthusiasm"
+          accessibilityLabel="increment"
+          onPress={onIncrement}
+          color="blue"
+        />
+        <Button
+          title="Decrease enthusiasm"
+          accessibilityLabel="decrement"
+          onPress={onDecrement}
+          color="red"
+        />
+      </View>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-    container: {
-      alignItems: 'center',
-      backgroundColor: '#F5FCFF',
-      flex: 1,
-      justifyContent: 'center',
-    },
-    instructions: {
-      color: '#333333',
-      marginBottom: 5,
-      textAlign: 'center',
-    },
-    welcome: {
-      fontSize: 20,
-      margin: 10,
-      textAlign: 'center',
-    },
-  });
-  
-  export default Intro;
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  greeting: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    margin: 16
+  }
+});
+
+export default Intro;
