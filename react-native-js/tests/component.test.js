@@ -1,5 +1,6 @@
 import {fireEvent, render,  } from '@testing-library/react-native'
-import {StaticMonoText, ChangableText, textToShow} from '../components/TextBoxComponents'
+import {StaticMonoText} from '../components/StaticMonoText'
+import {ChangableText, textToShow} from '../components/ChangableText'
 import EditScreenInfo from '../components/EditScreenInfo'
 
 import '@testing-library/jest-dom'

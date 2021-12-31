@@ -1,7 +1,7 @@
 import { StyleSheet, TouchableOpacity } from "react-native";
 
 import Colors from "../constants/Colors";
-import {StaticMonoText}  from "./TextBoxComponents";
+import {StaticMonoText}  from "./StaticMonoText";
 import { Text, View } from "./Themed";
 
 export default function EditScreenInfo({ path }) {

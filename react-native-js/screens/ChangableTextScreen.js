@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { ChangableText } from "../components/TextBoxComponents";
+import { ChangableText } from "../components/ChangableText";
 
 export default function ChangableTextScreen({ navigation }) {
   return (
