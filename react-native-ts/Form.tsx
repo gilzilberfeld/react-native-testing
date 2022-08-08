@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
@@ -6,7 +7,7 @@ export type Props = {
   baseEnthusiasmLevel?: number;
 };
 
-const Intro: React.FC<Props> = ({
+const Form: React.FC<Props> = ({
   name,
   baseEnthusiasmLevel = 0
 }) => {
@@ -24,6 +25,11 @@ const Intro: React.FC<Props> = ({
   const getExclamationMarks = (numChars: number) =>
     numChars > 0 ? Array(numChars + 1).join('!') : '';
 
+  getData: async()=> {
+    const resp = await axios.get("http://www.amazon.com")
+    return resp.data
+  }
+    
   return (
     <View style={styles.container}>
       <Text style={styles.greeting} testID='theText'>
@@ -62,4 +68,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Intro;
+export default Form;
